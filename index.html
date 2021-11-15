@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>threeJs</title>
+    <style>
+        html, body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .bg {
+            position: fixed;
+            filter: blur(3px);
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom right, #2d3d60, #9caed5);
+        }
+    </style>
+    <script type="module">
+        import * as THREE from 'https://cdn.skypack.dev/three';
+        import CameraControls from 'https://cdn.skypack.dev/camera-controls';
+
+        // 点击事件
+        function initThreeClickEvent() {
+            cv.addEventListener("click", event => {
+                // 拿到鼠标在屏幕的坐标
+                let mouseX = event.clientX; // 鼠标单击位置横坐标
+                let mouseY = event.clientY; // 鼠标单击位置纵坐标
+                const rect = cv.getBoundingClientRect(); // 拿到div相对屏幕坐标的偏移量
+                // 屏幕坐标转标准设备坐标
+                const x = ((mouseX - rect.left) / cv.clientWidth) * 2 - 1;
+                const y = -((mouseY - rect.top) / cv.clientHeight) * 2 + 1;
+                let standardVector = new THREE.Vector3(x, y); // 标准设备坐标
+
+                // 标准设备坐标转世界坐标
+                let worldVector = standardVector.unproject(camera);
+                // 射线投射方向单位向量(worldVector坐标减相机位置坐标)
+                let ray = worldVector.sub(camera.position).normalize();
+                // 创建射线投射器对象
+                let rayCaster = new THREE.Raycaster(camera.position, ray);
+                rayCaster.camera = camera // 设置一下相机
+
+                // 返回射线选中的对象 // 第一个参数是检测的目标对象 第二个参数是目标对象的子元素
+                let intersects = rayCaster.intersectObjects(scene.children, true);
+                console.log(intersects);
+                if (intersects.length > 0) {}
+            });
+        }
+
+
+        // 注册控制器
+        CameraControls.install({THREE: THREE});
+
+        // 场景
+        const scene = new THREE.Scene();
+        // 摄像头
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 5000);
+        // 摄像头位置
+        const cp = 1100;
+        camera.position.set(cp, cp, cp);
+        // 摄像头朝向 坐标轴 Y-青色 X-红色 Z-蓝色
+        camera.up.set(0, 1, 0);
+        // 摄像头看向
+        camera.lookAt(0, 0, 0);
+        // 渲染器
+        const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
+        // 渲染尺寸
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        // 设置像素比，针对高清屏
+        renderer.setPixelRatio(window.devicePixelRatio);
+        // 背景色
+        renderer.setClearColor(0xffffff, 0);
+        // 添加渲染元素到页面中
+        const cv = renderer.domElement;
+        document.body.appendChild(cv);
+        initThreeClickEvent();
+
+        // 普通光源
+        let ambient = new THREE.AmbientLight(0xffffff);
+        scene.add(ambient);
+
+        // 点光源
+        const lightDistance = 500;
+        let spotLight = new THREE.PointLight(0xffffff);
+        spotLight.distance = 2000;
+        spotLight.position.set(-lightDistance, lightDistance, -lightDistance);
+        scene.add(spotLight);
+
+        // 坐标轴 Y-青色 X-红色 Z-蓝色
+        const axes = new THREE.AxesHelper(650);
+        // scene.add(axes);
+
+        // 地板
+        const floorHeight = 1;
+        const floorShape = new THREE.CylinderGeometry(650, 650, floorHeight, 200);
+        const floorMaterial = new THREE.MeshLambertMaterial({color: 0x888888});
+        const floor = new THREE.Mesh(floorShape, floorMaterial);
+        scene.add(floor);
+
+        const mansions = [];
+
+        function createMansion(long, width, height, color, position) {
+            // 物体的形状
+            const geometry = new THREE.BoxGeometry(long, height, width);
+            // 物体的材质
+            const material = new THREE.MeshLambertMaterial({color: color});
+            // 通过形状和材质创建出物体
+            const mansion = new THREE.Mesh(geometry, material);
+            // 位置
+            mansion.position.set(position[0], height / 2, position[1]);
+            // 放置物体到场景中
+            scene.add(mansion);
+            mansions.push(mansion);
+            return mansion;
+        }
+
+        const Baidu = createMansion(300, 80, 180, 0x78a355, [-300, -200]);
+        const Alibaba = createMansion(150, 80, 380, 0xfaa755, [300, 0]);
+        const Tencent = createMansion(90, 140, 400, 0x585eaa, [150, 400]);
+        Baidu.name = "Baidu";
+        Alibaba.name = "Alibaba";
+        Tencent.name = "Tencent";
+
+        // 开启阴影
+        const openShadow = true;
+        if (openShadow) {
+            renderer.shadowMap.enabled = true; // 渲染器
+            spotLight.castShadow = true; // 光照
+            mansions.forEach(e => e.castShadow = true); // 楼房
+            floor.receiveShadow = true; // 地板
+        }
+
+        // 控制器
+        const cameraC = new CameraControls(camera, renderer.domElement);
+
+        // 时钟？
+        const clock = new THREE.Clock();
+        const keepRender = function () {
+            // 持续渲染
+            const delta = clock.getDelta();
+            const hasControlsUpdated = cameraC.update(delta);
+            if (hasControlsUpdated) {
+                renderer.render(scene, camera);
+            }
+            requestAnimationFrame(keepRender);
+        };
+        // 开始渲染
+        renderer.render(scene, camera);
+        keepRender();
+
+    </script>
+</head>
+<body>
+<div class="bg"></div>
+</body>
+</html>

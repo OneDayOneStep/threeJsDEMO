@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6532e054-59ba-4720-a44c-b6d28b2f4d4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/3JSFPS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/audio/deep-solar-wind.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/audio/deep-solar-wind.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/html-images/3JSFPS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/html-images/white-pixels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/alien-alloy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/alien-carving-gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/alien-carving.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/autumn-xneg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/autumn-xpos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/autumn-yneg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/autumn-ypos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/autumn-zneg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/autumn-zpos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/blue-glowy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/electric-blue-light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/rocky-ground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/images/x-crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/Detector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/Stats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/THREEx.FullScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/THREEx.KeyboardState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/THREEx.WindowResize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/Three.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/js/gamepad_uncompressed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/models/brass-512.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/7DFPS/models/star.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/dat-gui-demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/dat.gui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph2d-basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph2d-gui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph2d-hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph2d-implicit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph2d-vector-field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph3d-basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph3d-curve.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph3d-deriv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph3d-surface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/graph3d-volume.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/2d-basic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/2d-gui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/2d-hello.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/2d-implicit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/3d-basic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/3d-curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/3d-deriv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/3d-surface.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/dat-gui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/html-images/white-pixels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/mathbox-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/mathbox-core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/mathbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/MathBox/shaders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stemkoski.github.com/Three.js/Template.html" beforeDir="false" afterPath="$PROJECT_DIR$/stemkoski.github.com/Three.js/Template.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/stemkoski.github.com" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1wLeKrxcWlM97XVb9nwCXJv2GG6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\threeJs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6532e054-59ba-4720-a44c-b6d28b2f4d4b" name="Changes" comment="" />
+      <created>1628242235944</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628242235944</updated>
+      <workItem from="1628242237084" duration="1026000" />
+      <workItem from="1628243687489" duration="1072000" />
+      <workItem from="1628502428994" duration="2486000" />
+      <workItem from="1628586953395" duration="2794000" />
+      <workItem from="1628674786973" duration="2426000" />
+      <workItem from="1636609332170" duration="4316000" />
+      <workItem from="1636681068031" duration="11775000" />
+      <workItem from="1636942791661" duration="18911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
